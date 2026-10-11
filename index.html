@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carlos Kimeu Nzuki — Computer Science Student & Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--line:#e3e7ee;--tx:#0f172a;--mu:#52607a;--ac:#0f4c81;--ac2:#0e7490;--soft:#e8f0f9;--ok:#047857;--sh:0 1px 2px rgba(15,23,42,.05),0 4px 14px rgba(15,23,42,.05);--shh:0 10px 30px rgba(15,23,42,.12);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a0f1a;--card:#111827;--line:#1e293b;--tx:#e8edf5;--mu:#94a3b8;--ac:#60a5fa;--ac2:#22d3ee;--soft:#15233b;--ok:#34d399;--sh:0 1px 2px rgba(0,0,0,.4);--shh:0 12px 32px rgba(0,0,0,.5)}}
+:root[data-theme=dark]{--bg:#0a0f1a;--card:#111827;--line:#1e293b;--tx:#e8edf5;--mu:#94a3b8;--ac:#60a5fa;--ac2:#22d3ee;--soft:#15233b;--ok:#34d399;--sh:0 1px 2px rgba(0,0,0,.4);--shh:0 12px 32px rgba(0,0,0,.5)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 Inter,system-ui,Segoe UI,Arial,sans-serif;-webkit-font-smoothing:antialiased;background-image:radial-gradient(900px 420px at 85% -5%,color-mix(in srgb,var(--ac) 9%,transparent),transparent)}
+a{color:inherit;text-decoration:none}.wrap{max-width:1100px;margin:auto;padding:0 24px}
+h1,h2,h3,.logo{font-family:"Plus Jakarta Sans",Inter,system-ui,sans-serif}
+nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.logo{font-weight:800;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}.logo i{width:32px;height:32px;border-radius:8px;background:var(--ac);display:grid;place-items:center;color:#fff;font-style:normal;font-size:12px;letter-spacing:.04em}
+.links{display:flex;gap:22px;margin-left:auto;font-size:14px;font-weight:500;color:var(--mu);overflow-x:auto;white-space:nowrap;scrollbar-width:none}.links a{padding:4px 0;border-bottom:2px solid transparent}.links a:hover{color:var(--tx);border-color:var(--ac)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--ac);color:#fff;border:1px solid var(--ac);padding:11px 20px;border-radius:8px;font:600 14px Inter,sans-serif;cursor:pointer;white-space:nowrap;transition:.2s}
+:root[data-theme=dark] .btn:not(.o){color:#06121f}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .btn:not(.o){color:#06121f}}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shh)}.btn.o{background:transparent;color:var(--tx);border-color:var(--line)}.btn.o:hover{border-color:var(--ac);color:var(--ac)}.btn.s{padding:8px 14px;font-size:13px}
+.hero{padding:88px 0 56px;display:grid;grid-template-columns:1.3fr .7fr;gap:56px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:8px;background:var(--soft);color:var(--ac);padding:6px 14px;border-radius:99px;font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}.tag:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ok)}
+h1{font-size:clamp(36px,5.6vw,62px);line-height:1.06;margin:20px 0 18px;font-weight:800;letter-spacing:-.03em}
+h1 span{color:var(--ac);position:relative;white-space:nowrap}h1 span:after{content:"";position:absolute;left:0;right:0;bottom:2px;height:8px;background:color-mix(in srgb,var(--ac) 18%,transparent);z-index:-1;border-radius:4px}
+.lead{color:var(--mu);font-size:18.5px;max-width:560px}.row{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
+.chips{display:flex;gap:10px;flex-wrap:wrap}.chip{border:1px solid var(--line);background:var(--card);padding:7px 14px;border-radius:8px;font-size:13.5px;color:var(--mu);box-shadow:var(--sh)}
+.avatar{position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:20px;background:linear-gradient(160deg,var(--ac),#0b2f52);display:grid;place-items:center;font:800 clamp(64px,12vw,110px) "Plus Jakarta Sans",Inter,sans-serif;color:#fff;box-shadow:var(--shh);max-width:330px;justify-self:center;width:100%;outline:1px solid var(--line);outline-offset:10px}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+section{padding:72px 0;border-top:1px solid var(--line)}.eb{color:var(--ac);font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eb:before{content:"";width:28px;height:2px;background:var(--ac)}
+h2{font-size:clamp(28px,4vw,38px);margin:10px 0 10px;letter-spacing:-.02em;font-weight:800}.sub{color:var(--mu);max-width:620px;margin:0 0 34px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:var(--sh);transition:.25s}.card:hover{transform:translateY(-4px);box-shadow:var(--shh);border-color:color-mix(in srgb,var(--ac) 45%,var(--line))}
+.card h3{margin:8px 0 6px;font-size:18px;letter-spacing:-.01em}.card p{margin:8px 0;color:var(--mu);font-size:15px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}.g2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.tl{border-left:2px solid var(--line);margin-left:8px;padding-left:30px}.tl .card{margin-bottom:20px;position:relative}.tl .card:before{content:"";position:absolute;left:-40px;top:30px;width:12px;height:12px;border-radius:50%;background:var(--ac);box-shadow:0 0 0 5px var(--bg),0 0 0 6px var(--line)}
+.meta{font-size:12px;color:var(--ac);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.st{float:right;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ok);background:color-mix(in srgb,var(--ok) 12%,transparent);padding:3px 10px;border-radius:99px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:26px;padding:5px;border:1px solid var(--line);background:var(--card);border-radius:10px;width:fit-content;max-width:100%}.tabs button{border:0;background:none;color:var(--mu);padding:8px 18px;border-radius:7px;font:600 13.5px Inter,sans-serif;cursor:pointer}.tabs button:hover{color:var(--tx)}.tabs button.on{background:var(--ac);color:#fff}
+:root[data-theme=dark] .tabs button.on{color:#06121f}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .tabs button.on{color:#06121f}}
+form{display:grid;gap:12px;max-width:600px}input,textarea{font:inherit;padding:13px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--tx);width:100%;transition:.2s}input:focus,textarea:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px color-mix(in srgb,var(--ac) 20%,transparent)}
+footer{background:#0b1220;color:#94a3b8;padding:40px max(20px,calc((100% - 1100px)/2)) 28px;font-size:14px;margin-top:40px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;column-gap:18px;row-gap:26px}.fp{grid-area:1/1;width:84px;height:84px;border-radius:50%;position:relative;overflow:hidden;background:linear-gradient(160deg,var(--ac),#0b2f52);display:grid;place-items:center;color:#fff;font:800 26px "Plus Jakarta Sans",Inter,sans-serif;border:2px solid rgba(255,255,255,.25)}.fp img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.fn{color:#fff;font:700 17px "Plus Jakarta Sans",Inter,sans-serif;grid-area:1/2;text-align:left}.fc{grid-area:1/3;display:flex;justify-content:flex-end;gap:12px}.cp{grid-area:2/1/3/-1;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center}.fc a{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;transition:.2s}.fc a:hover{background:#60a5fa;border-color:#60a5fa;color:#06121f;transform:translateY(-2px)}
+#cv{position:fixed;inset:0;background:rgba(5,8,20,.7);z-index:50;display:none;padding:20px;overflow:auto}#cv.on{display:block}
+.doc{background:#fff;color:#111;max-width:780px;margin:auto;border-radius:10px;padding:40px;font-size:14px;line-height:1.6}.doc h2{font-size:28px;margin:0}.doc h4{margin:20px 0 6px;border-bottom:2px solid #0f4c81;color:#0f4c81;text-transform:uppercase;font-size:12.5px;letter-spacing:.1em;padding-bottom:3px}
+.bar{max-width:780px;margin:0 auto 12px;display:flex;gap:8px;flex-wrap:wrap}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:48px 0 36px;gap:34px}.g2{grid-template-columns:1fr}.avatar{max-width:230px;order:-1;outline-offset:8px}.links{display:none}nav .btn.s:first-of-type{margin-left:auto}section{padding:52px 0}.wrap{padding:0 18px}}
+@media print{body>*:not(#cv){display:none!important}#cv{position:static;background:none;padding:0}.bar{display:none}.doc{box-shadow:none;max-width:none;padding:0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top"><i>CK</i>Carlos Kimeu</a>
+<div class="links"><a href="#about">About</a><a href="#career">Career</a><a href="#skills">Skills</a><a href="#affil">Affiliation</a><a href="#projects">Projects</a><a href="#certs">Certificates</a><a href="#training">Trainings</a><a href="#contact">Contact</a></div>
+<button class="btn s" onclick="cv(1)">View Resume &amp; CV</button><button class="btn o s" id="th" aria-label="Theme">◐</button></div></nav>
+
+<div class="wrap" id="top">
+<div class="hero"><div>
+<span class="tag">Computer Science Student • Web Developer</span>
+<h1>Building <span>Digital Solutions</span> for real needs.</h1>
+<p class="lead">Computer Science student at the University of Kabianga and technical lead for the St. Augustine UoKCSA Chaplaincy, crafting fast, polished web applications across frontend and backend.</p>
+<div class="row"><a class="btn" href="#projects">View Projects</a><button class="btn o" onclick="cv(1)">Interactive Resume</button><a class="btn o" href="#contact">Contact Me</a></div>
+<div class="chips"><span class="chip">✉ <span class="em"></span></span><span class="chip">☎ +254 742 863 723</span><span class="chip">📍 Kenya</span></div>
+</div><div class="avatar"><span id="ini">CK</span><img id="ph" alt="Carlos Kimeu Nzuki" hidden></div></div>
+
+<section id="about"><div class="eb">Professional profile</div><h2>About me</h2><p class="sub">Computer Science student • Technical lead</p>
+<div class="g2"><div class="card"><h3>Summary</h3><p>I'm Nzuki Carlos Kimeu, a Computer Science student at the University of Kabianga, Kenya. I specialise in front-end development with HTML, CSS and JavaScript and often deliver complete, self-contained web apps that run anywhere, with no setup.</p><p>I also build and maintain the digital infrastructure of the St. Augustine UoKCSA Chaplaincy (University of Kabianga Catholic Students' Association), spanning the public website, admin panel and Django backend.</p></div>
+<div class="card"><h3>Career objective</h3><p>To grow into a full-stack engineer who ships secure, well-designed systems for local organisations, from hospitals and schools to counties and community groups, using modern web technologies and Kenyan context in every product.</p></div></div></section>
+
+<section id="career"><div class="eb">Career roadmap</div><h2>Experience &amp; journey</h2><p class="sub">Leadership, study and hands-on software delivery.</p><div class="tl" id="tl"></div></section>
+<section id="skills"><div class="eb">Core competencies</div><h2>Skills &amp; stack</h2><p class="sub">From interface design to server-side logic.</p><div class="g" id="sk"></div></section>
+<section id="affil"><div class="eb">Community</div><h2>Affiliation &amp; membership</h2><p class="sub">Associations I serve and belong to.</p><div class="g" id="af"></div></section>
+<section id="projects"><div class="eb">Featured work</div><h2>Projects &amp; systems</h2><p class="sub">Categorised showcase of platforms I have designed and built.</p><div class="tabs" id="pt"></div><div class="g" id="pj"></div></section>
+<section id="certs"><div class="eb">Credentials</div><h2>Certificates</h2><p class="sub">Formal certifications I have earned.</p><div class="g" id="ce"></div></section>
+<section id="training"><div class="eb">Professional development</div><h2>Trainings &amp; workshops</h2><p class="sub">Trainings, workshops and seminars I have attended.</p><div class="tabs" id="tt"></div><div class="g" id="tr"></div></section>
+<section id="contact"><h2>Get in touch</h2><p class="sub">Open to internships, attachments, freelance builds and collaborations.</p>
+<div class="row" style="margin:0"><a class="btn" href="mailto:carloskimeu3@gmail.com">✉ Send Email</a><button class="btn o" type="button" onclick="cv(1)">View Resume &amp; CV</button></div></section>
+</div>
+<footer><div class="fp"><span id="fini">CK</span><img id="fph" alt="Carlos Kimeu Nzuki" hidden></div><div class="fn">Nzuki Carlos Kimeu</div><div class="fc"><a href="https://wa.me/254742863723" target="_blank" rel="noopener" aria-label="WhatsApp 0742863723" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.8A9 9 0 1 1 8 19.5L3 21z"/><path d="M9 8.5c0 3.3 2.7 6 6 6l1.3-1.4-2-1.1-.9.7a4 4 0 0 1-1.9-1.9l.7-.9-1.1-2L9 8.5z"/></svg></a><a href="mailto:carloskimeu3@gmail.com" aria-label="Email carloskimeu3@gmail.com" title="Email"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div><div class="cp">© 2026 Nzuki Carlos Kimeu. All rights reserved.</div></footer>
+
+<div id="cv"><div class="bar"><button class="btn s" onclick="window.print()">⬇ Print / Save PDF</button><button class="btn o s" style="background:#fff" onclick="cv(0)">Close</button></div>
+<div class="doc"><h2>Nzuki Carlos Kimeu</h2><div>Computer Science Student • Web Developer<br><span class="em"></span> • +254 742 863 723 • Kenya</div>
+<h4>Summary</h4><div>Computer Science student at the University of Kabianga with strong front-end skills (HTML, CSS, JavaScript) and growing backend experience. Technical lead for the St. Augustine UoKCSA Chaplaincy.</div>
+<h4>Experience</h4><div id="cvx"></div><h4>Education</h4><div><b>BSc. Computer Science</b>, University of Kabianga — Ongoing</div>
+<h4>Selected projects</h4><div id="cvp"></div><h4>Skills</h4><div>HTML5, CSS3, JavaScript, Python, Django REST, responsive design, role-based access, data modelling</div></div></div>
+
+<script>
+/* ===== YOUR PHOTO =====
+   Put your picture in the same folder as this file (e.g. carlos.jpg)
+   and write its name below, like: var PHOTO = "carlos.jpg";
+   Leave it empty ("") to show your initials instead. */
+var PHOTO = "";
+var ME={email:"carloskimeu3@gmail.com"};
+var EXP=[["Technical Lead","St. Augustine UoKCSA Chaplaincy","Ongoing","Builds and maintains the association's digital infrastructure across frontend and backend: public website, admin panel with approval workflows, and a Django REST backend with roles."],
+["BSc. Computer Science Student","University of Kabianga","Ongoing","Studying computer science while delivering real-world web systems alongside coursework."],
+["Independent Web Developer","Self-directed projects","Ongoing","Designs and ships complete systems for health, education, transport, commerce and county services, with KSh pricing and local workflows."]];
+var SK=[["Front-End Engineering","HTML5, CSS3, JavaScript (ES6+), responsive and themeable UI, single-file web apps, accessible design."],["Backend & APIs","Python, Django REST, authentication and role-based access, data models, approval workflows."],["Local-First Systems","Hospital, ERP, payroll, booking and ordering platforms with Kenyan context: KSh, M-Pesa-style payments, Swahili naming."]];
+var AFF=[["St. Augustine UoKCSA Chaplaincy","University of Kabianga Catholic Students' Association. Technical / leadership role building its digital platforms.","Active Member"],["University of Kabianga","Computer Science student.","Current Student"]];
+var PRJ=[["Public","St. Martin's Matuu Wendano ERP","Student management ERP for a secondary school: records, fees and reporting."],["Public","MyMachakos","County services app for Machakos County, modelled on a county citizen-service app."],["Community","UoKCSA Website","Official website of the St. Augustine UoKCSA Chaplaincy at the University of Kabianga.","https://www.staugustineuokcsa.org"],["Business","Gari Yangu","Car rental and booking system covering Kenyan towns."],["Business","Mlisho","Food and drinks ordering with sign-in, KSh prices and imagery."],["Business","HR Payroll Ledger","Employee records, payroll runs, payslips and statutory rate settings."],["Business","Huduma Receipts","Receipt generator for service businesses with VAT and saved receipts."],["Business","KabiangaMarket","Second-hand marketplace platform for buying and selling used items in the Kabianga community."]];
+var CERTS=[]; /* add like: ["Certificate title","Issuing organisation","2025"] */
+var TRAIN=[]; /* add like: ["Training","Title","Organiser","2025"]  (type: Training or Workshop) */
+var $=function(i){return document.getElementById(i)};
+if(PHOTO){var im=$('ph');im.onload=function(){im.hidden=false;$('ini').hidden=true};im.onerror=function(){im.hidden=true};im.src=PHOTO;var fi=$('fph');fi.onload=function(){fi.hidden=false;$('fini').hidden=true};fi.src=PHOTO}
+function card(m,t,p,s){return '<div class="card">'+(s?'<span class="st">'+s+'</span>':'')+'<div class="meta">'+m+'</div><h3>'+t+'</h3><p>'+p+'</p></div>'}
+$('tl').innerHTML=EXP.map(function(e){return card(e[2]+' • '+e[1],e[0],e[3])}).join('');
+$('sk').innerHTML=SK.map(function(s){return card('Skill set',s[0],s[1])}).join('');
+$('af').innerHTML=AFF.map(function(a){return card('Affiliation',a[0],a[1],a[2])}).join('');
+function tabs(id,list,out,draw){var el=$(id),cur='All';list=['All'].concat(list.filter(function(v,i,a){return a.indexOf(v)===i}));
+ function r(){el.innerHTML=list.map(function(l){return '<button class="'+(l===cur?'on':'')+'" data-v="'+l+'">'+l+'</button>'}).join('');$(out).innerHTML=draw(cur);
+ el.querySelectorAll('button').forEach(function(b){b.onclick=function(){cur=b.dataset.v;r()}})}r()}
+tabs('pt',PRJ.map(function(p){return p[0]}),'pj',function(c){return PRJ.filter(function(p){return c==='All'||p[0]===c}).map(function(p){return card(p[0],p[1],p[2]+(p[3]?'<br><a href="'+p[3]+'" target="_blank" rel="noopener" style="color:var(--ac);font-weight:600">www.staugustineuokcsa.org ↗</a>':''),'Built')}).join('')});
+$('ce').innerHTML=CERTS.length?CERTS.map(function(c){return card(c[2],c[0],c[1])}).join(''):'<div class="card" style="grid-column:1/-1;text-align:center"><h3>Coming soon</h3><p>Certificates will be added here.</p></div>';
+tabs('tt',['Training','Workshop'],'tr',function(c){if(!TRAIN.length)return '<div class="card" style="grid-column:1/-1;text-align:center"><h3>Coming soon</h3><p>Trainings and workshops will be added here.</p></div>';var l=TRAIN.filter(function(x){return c==='All'||x[0]===c});return l.length?l.map(function(x){return card(x[3]+' • '+x[0],x[1],x[2])}).join(''):'<div class="card" style="grid-column:1/-1;text-align:center"><p>Nothing in this category yet.</p></div>'});
+document.querySelectorAll('.em').forEach(function(e){e.textContent=ME.email});
+$('cvx').innerHTML=EXP.map(function(e){return '<p><b>'+e[0]+'</b>, '+e[1]+' — '+e[2]+'<br>'+e[3]+'</p>'}).join('');
+$('cvp').innerHTML=PRJ.map(function(p){return '<div><b>'+p[1]+'</b> — '+p[2]+'</div>'}).join('');
+function cv(o){$('cv').classList.toggle('on',!!o)}
+$('th').onclick=function(){var r=document.documentElement,d=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=d?'light':'dark'};
+</script>
+</body>
+</html>
